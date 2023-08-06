@@ -1,15 +1,14 @@
 package com.example.tic_tac_toe.game;
 
-import org.springframework.stereotype.Service;
 
 import static com.example.tic_tac_toe.game.TicTacToeGame.player_O;
 import static com.example.tic_tac_toe.game.TicTacToeGame.player_X;
 
-@Service
-public class BoardService implements BoardMovements{
+
+public class BoardMovementsImplementation implements BoardMovements{
     private static final int boardSize = 3;
     private char[][] board;
-    public BoardService() {
+    public BoardMovementsImplementation() {
         board = new char[boardSize][boardSize];
         initializeBoard();
     }

@@ -10,7 +10,7 @@ public class TicTacToeGame {
     private char currentPlayer;
 
     public TicTacToeGame() {
-        boardMovements = new BoardService();
+        boardMovements = new BoardMovementsImplementation();
         currentPlayer = player_X;
     }
 
